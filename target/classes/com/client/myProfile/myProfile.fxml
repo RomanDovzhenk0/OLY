@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.client.myProfile.MyProfileController">
+   <children>
+      <ImageView fitHeight="792.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/emptybackground.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="328.0" layoutY="76.0" prefHeight="640.0" prefWidth="645.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Group fx:id="infoGroup" layoutX="231.0" layoutY="14.0" visible="false">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="203.0" prefWidth="390.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/userPic.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="username" fill="#0078ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown" textAlignment="CENTER" wrappingWidth="389.91357421875">
+                           <font>
+                              <Font name="AIGDT" size="35.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutY="222.392578125" spacing="25.0">
+                     <children>
+                        <Group>
+                           <children>
+                              <Text layoutY="0.025390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Firstname:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="firstnameText" fill="#0078ff" layoutX="100.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown">
+                                 <font>
+                                    <Font name="AIGDT" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <Text layoutY="2.025390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Lastname:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="lastnameText" fill="#0078ff" layoutX="100.0" layoutY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown">
+                                 <font>
+                                    <Font name="AIGDT" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <Text layoutY="2.025390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="phoneText" fill="#0078ff" layoutX="70.0" layoutY="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown">
+                                 <font>
+                                    <Font name="AIGDT" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <Text layoutY="1.025390625" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="emailText" fill="#0078ff" layoutX="62.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown">
+                                 <font>
+                                    <Font name="AIGDT" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="City:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="cityText" fill="#0078ff" layoutX="48.0" layoutY="-1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown">
+                                 <font>
+                                    <Font name="AIGDT" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <Text layoutY="0.025390625" strokeType="OUTSIDE" strokeWidth="0.0" text="BirthDate:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="birthDateText" fill="#0078ff" layoutX="97.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown">
+                                 <font>
+                                    <Font name="AIGDT" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
+                        <Group>
+                           <children>
+                              <Text layoutY="0.025390625" strokeType="OUTSIDE" strokeWidth="0.0" text="CreatedAt:">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="createdAtText" fill="#0078ff" layoutX="103.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown">
+                                 <font>
+                                    <Font name="AIGDT" size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Group>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+            <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" layoutX="210.0" layoutY="10.0" prefHeight="620.0" prefWidth="425.0" visible="false">
+               <content>
+                  <GridPane fx:id="gridPane" prefHeight="620.0" prefWidth="425.0" style="-fx-background-color: white;">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+            <Group fx:id="changeProfileGroup" layoutX="210.0" layoutY="27.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="585.0" prefWidth="425.0">
+                     <children>
+                        <Text fx:id="usernameText" fill="#0078ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Unknown" textAlignment="CENTER" wrappingWidth="325.91357421875">
+                           <font>
+                              <Font name="AIGDT" size="35.0" />
+                           </font>
+                        </Text>
+                        <PasswordField fx:id="passwordField" maxWidth="-Infinity" prefHeight="36.0" prefWidth="210.0" promptText="Password (8-16 characters)" style="-fx-background-color: white; -fx-border-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Line fx:id="passwordLine" endX="91.0" startX="-118.0" stroke="#0078ff" strokeType="OUTSIDE">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Line>
+                        <Text fill="GREY" strokeType="OUTSIDE" strokeWidth="0.0" text="Must contain upper case, lower case, number" textAlignment="CENTER" wrappingWidth="203.271484375">
+                           <VBox.margin>
+                              <Insets bottom="12.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Italic" size="10.2" />
+                           </font>
+                        </Text>
+                        <PasswordField fx:id="confirmPasswordField" maxWidth="-Infinity" prefHeight="36.0" prefWidth="210.0" promptText="Confirm password" style="-fx-background-color: white; -fx-border-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </PasswordField>
+                        <Line fx:id="confirmPasswordLine" endX="91.0" startX="-118.0" stroke="#0078ff" strokeType="OUTSIDE">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Line>
+                        <Text fill="GREY" strokeType="OUTSIDE" strokeWidth="0.0" text="Can contain letters (a-z), numbers (0-9)" textAlignment="CENTER" wrappingWidth="203.271484375">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="12.0" />
+                           </VBox.margin>
+                        </Text>
+                        <DatePicker fx:id="birthDatePicker" editable="false" prefHeight="36.0" prefWidth="210.0" promptText="BirthDate" style="-fx-background-color: white; -fx-border-color: white;" />
+                        <Line fx:id="birthDateLine" endX="91.0" startX="-118.0" stroke="#0078ff" strokeType="OUTSIDE">
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Line>
+                        <TextField fx:id="phoneNumberField" maxWidth="-Infinity" prefHeight="36.0" prefWidth="210.0" promptText="Phone Number" style="-fx-border-color: white; -fx-background-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Line fx:id="phoneNumberLine" endX="91.0" startX="-118.0" stroke="#0078ff" strokeType="OUTSIDE">
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Line>
+                        <TextField fx:id="emailField" maxWidth="-Infinity" prefHeight="36.0" prefWidth="210.0" promptText="Email" style="-fx-border-color: white; -fx-background-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Line fx:id="emailLine" endX="91.0" startX="-118.0" stroke="#0078ff" strokeType="OUTSIDE">
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Line>
+                        <TextField fx:id="firstnameField" maxWidth="-Infinity" prefHeight="36.0" prefWidth="210.0" promptText="Firstname" style="-fx-border-color: white; -fx-background-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Line fx:id="firstnameLine" endX="91.0" startX="-118.0" stroke="#0078ff" strokeType="OUTSIDE">
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Line>
+                        <TextField fx:id="lastnameField" maxWidth="-Infinity" prefHeight="36.0" prefWidth="210.0" promptText="Lastname" style="-fx-border-color: white; -fx-background-color: white;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </TextField>
+                        <Line fx:id="lastnameLine" endX="91.0" startX="-118.0" stroke="#0078ff" strokeType="OUTSIDE">
+                           <VBox.margin>
+                              <Insets bottom="25.0" />
+                           </VBox.margin>
+                        </Line>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ComboBox fx:id="regionComboBox" prefWidth="150.0" promptText="Region" style="-fx-background-color: white; -fx-border-color: #0078FF;" visibleRowCount="4" />
+                              <ComboBox fx:id="cityComboBox" prefWidth="150.0" promptText="City" style="-fx-background-color: white; -fx-border-color: #0078FF;">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="saveChangesButton" mnemonicParsing="false" prefHeight="36.0" prefWidth="116.0" style="-fx-background-color: #0078FF;" text="Save changes" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+      <Button fx:id="exitButton" blendMode="LIGHTEN" layoutX="1226.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0" style="-fx-background-color: #0078FF;" text="X" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="37.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="minimizeButton" blendMode="LIGHTEN" layoutX="1152.0" layoutY="-51.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="72.0" style="-fx-background-color: #0078FF;" text="_" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="328.0" layoutY="76.0" prefHeight="640.0" prefWidth="210.0" style="-fx-background-color: #0078FF; -fx-background-radius: 10; -fx-background-insets: 10;">
+         <children>
+            <Button fx:id="infoButton" layoutX="10.0" layoutY="73.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: white; -fx-background-radius: 0;" text="Info" textFill="#0078ff">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="adsButton" layoutX="10.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #0078FF;" text="Ads" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="changeProfileButton" layoutX="10.0" layoutY="172.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="190.0" style="-fx-background-color: #0078FF;" text="Change Profile" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backarrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="goToBrowserButton" mnemonicParsing="false" opacity="0.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 52;" />
+   </children>
+</AnchorPane>

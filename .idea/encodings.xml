@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/client/ClientAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/client/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/client/Mediator.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/client/ad" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/client/authenticator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/client/browser" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/client/createAd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/client/myProfile" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/server/Server.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/server/ServerAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/server/dbHandler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/serviceLib/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/serviceLib/interfaces" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/serviceLib/models" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/serviceLib/services" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/ad" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/authenticator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/browser" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/client/ad" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/client/authenticator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/client/browser" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/client/createAd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/client/images" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/client/myProfile" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/createAd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/images" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/myProfile" charset="UTF-8" />
+  </component>
+</project>

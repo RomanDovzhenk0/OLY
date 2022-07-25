@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.client.ad.AdController">
+   <children>
+      <ImageView fitHeight="792.0" fitWidth="1300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/emptybackground.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exitButton" blendMode="LIGHTEN" layoutX="1226.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0" style="-fx-background-color: #0078FF;" text="X" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Corbel Bold" size="37.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="minimizeButton" blendMode="LIGHTEN" layoutX="1152.0" layoutY="-51.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="72.0" style="-fx-background-color: #0078FF;" text="_" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Jokerman" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="130.0" layoutY="76.0" prefHeight="640.0" prefWidth="1040.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <ImageView fx:id="image" fitHeight="580.0" fitWidth="580.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/defaultProductImage.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="TOP_CENTER" layoutX="610.0" layoutY="30.0" prefHeight="580.0" prefWidth="430.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="59.0" prefWidth="225.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="59.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/img.png" />
+                           </image>
+                        </ImageView>
+                        <VBox>
+                           <children>
+                              <Text fx:id="usernameField" fill="#0078ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="dateOfRegistrationField" fill="#0078ff" strokeType="OUTSIDE" strokeWidth="0.0" text="on OLY since 2022-22-22" textAlignment="RIGHT">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <Text fx:id="regionAndCityField" fill="#0078ff" fontSmoothingType="LCD" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Днепропетровська область, м. Жовті Води" textAlignment="CENTER" wrappingWidth="149.0">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <Button fx:id="showPhoneAndEmailButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="408.0" style="-fx-background-color: #0078FF;" text="Show phone &amp; email" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Text fx:id="headingField" fill="#0078ff" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Оперативная память Kingston Fury DDR4-3200 16384MB PC4-256" textAlignment="CENTER" wrappingWidth="410.0">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="priceField" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="999999 грн." textAlignment="CENTER" wrappingWidth="150.0">
+                     <font>
+                        <Font name="System Italic" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextArea fx:id="descriptionField" editable="false" maxWidth="400.0" prefHeight="270.0" prefWidth="430.0" style="-fx-background-color: white;" text="iPhone 12 128gb&#10;Телефон в хорошому стані, заді на кришці є дві царапини.&#10;Батарея 89% тримає дуже добреFace ID: працює!&#10;TrueTone: працює!&#10;В телефоні мінялась тільки задня кришка!&#10;Комплект: iPhone, коробка, чохол, кабель, скрепка.&#10;Neverlock - працює з усіма сім картами&#10;Даю гарантію 30 днів&#10;При зустрічі в ІФ або олх доставкв&#10;Також дивіться інші оголошення" wrapText="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextArea>
+                  <Line startX="400.0">
+                     <VBox.margin>
+                        <Insets top="-15.0" />
+                     </VBox.margin>
+                  </Line>
+                  <HBox alignment="CENTER" prefHeight="16.0" prefWidth="310.0">
+                     <children>
+                        <Text fx:id="categoryField" fill="#0078ff" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advertising / Marketing / Internet" wrappingWidth="195.0">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#0078ff" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Views: " wrappingWidth="37.0">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="viewsField" fill="#0078ff" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000000" wrappingWidth="50.0">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="-20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Text fx:id="createdAtField" fill="#0078ff" lineSpacing="5.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2022-22-22" textAlignment="RIGHT" wrappingWidth="398.0">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="-15.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="deleteButton" disable="true" layoutX="700.0" layoutY="595.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #F08080;" text="Delete" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="editButton" disable="true" layoutX="845.0" layoutY="595.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="115.0" style="-fx-background-color: #0098FF;" text="Edit" textFill="WHITE" visible="false" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/backarrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" mnemonicParsing="false" opacity="0.0" prefHeight="90.0" prefWidth="90.0" text="Button" />
+   </children>
+</AnchorPane>
