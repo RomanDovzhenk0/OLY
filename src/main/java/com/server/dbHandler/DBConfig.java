@@ -8,7 +8,7 @@ public class DBConfig {
 
     protected String dbUser = "root";
 
-    protected String dbPass = "admin";
+    protected String dbPass = "root";
 
     protected String dbName = "oly";
 

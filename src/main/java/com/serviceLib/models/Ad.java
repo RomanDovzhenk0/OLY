@@ -126,7 +126,6 @@ public class Ad implements Serializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     private void readObject(ObjectInputStream is) {
